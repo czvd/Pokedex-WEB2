@@ -16,9 +16,9 @@ const router = createHashRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Pokedex />},
-      { path: "/about", element: <About />},
-      { path: "/pokemon/:name", element: <PokemonDetails />}
+      { index: true, element: <Pokedex /> }, 
+      { path: "about", element: <About /> },
+      { path: "pokemon/:name", element: <PokemonDetails /> }
     ],
   },
 ]);
