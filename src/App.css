@@ -1,0 +1,248 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* REMOVE LINK UNDERLINE */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINER (centers everything) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #c084fc;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  color: white;
+  width: 100%;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* TEXT INSIDE CARD */
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* IMAGE */
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #58a6ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #1f6feb;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* DETAILS PAGE */
+.details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  font-size: 36px;
+}
+
+.pokemon-image {
+  width: 150px;
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 20px;
+}
+
+.section p:last-child {
+  margin-bottom: 20px;
+}
+
+/* TAGS (types) */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #58a6ff;
+}
+
+/* STATS */
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 10px;
+  background: #333;
+  border-radius: 10px;
+}
+
+.stat-fill {
+  height: 100%;
+  background: #58a6ff;
+  border-radius: 10px;
+}
+
+/* LIST CLEANUP */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* TITLE */
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INTRO TEXT */
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 30px;
+}
+
+/* HEADINGS */
+section h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px; /* fixes weird centering */
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* PARAGRAPHS */
+p {
+  margin: 10px 0;
+}
